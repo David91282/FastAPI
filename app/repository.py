@@ -3,12 +3,6 @@ from . import models, schemas
 
 
 class VeterinarioRepository:
-    """Repositorio simple para Veterinario.
-
-    Responsable de acceder y modificar la BBDD. Mantiene la lógica de acceso a datos
-    separada de la API (Single Responsibility, Dependency Inversion via inyección de Session).
-    """
-
     def __init__(self, db: Session):
         self.db = db
 
